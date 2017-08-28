@@ -1,0 +1,25 @@
+node_modules/
+.expo/
+npm-debug.*
+.vscode/
+
+### ReactNative.Node Stack ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Optional npm cache directory
+.npm
+
