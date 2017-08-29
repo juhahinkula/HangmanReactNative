@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import Keyboard from '../components/Keyboard';
+import { StyleSheet, View } from 'react-native';
+import Keyboard from './components/Keyboard';
 
 export default class App extends React.Component {
   
