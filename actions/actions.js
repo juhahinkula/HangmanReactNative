@@ -1,7 +1,13 @@
-const LETTER_KEY_PRESSED = 'LETTER_KEY_PRESSED'
+import * as types from './actionTypes';
 
-export function letterPressed() {
+export function increment() {
   return {
-    type: LETTER_KEY_PRESSED
-  }
+    type: types.INCREMENT
+  };
+}
+
+export function decrement() {
+  return {
+    type: types.DECREMENT
+  };
 }

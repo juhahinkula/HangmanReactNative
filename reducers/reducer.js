@@ -1,18 +1,22 @@
-import {LETTER_KEY_PRESSED} from './actions/actions'
+import * as types from '../actions/actionTypes';
 
 const initialState = {
-  letter: '',
-  word: '',
-}
+  count: 0
+};
 
-const reducer = (state = initialState, action) => {
+export default function counter(state = initialState, action = {}) {
   switch (action.type) {
-    case LETTER_KEY_PRESSED:
+    case types.INCREMENT:
       return {
         ...state,
-        letter: 'A'
-      }
+        count: state.count + 1
+      };
+    case types.DECREMENT:
+      return {
+        ...state,
+        count: state.count - 1
+      };
     default:
       return state;
-    }
   }
+}
