@@ -1,7 +1,8 @@
 import {LETTER_KEY_PRESSED} from './actions/actions'
 
 const initialState = {
-  letter: ''
+  letter: '',
+  word: '',
 }
 
 const reducer = (state = initialState, action) => {
