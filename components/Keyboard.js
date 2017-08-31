@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default class Keyboard extends React.Component {
   state = {word: ''};
@@ -16,6 +16,7 @@ export default class Keyboard extends React.Component {
   render() {
     return (
       <View style={styles.container} >
+        <Image style={{width: 50, height: 50}} source={{ uri: "../images/6.png" }} />
         <Text>{this.state.word}</Text>
         <View style={styles.buttonContainer}  >
          { this.letters1.map((_, index) => 
