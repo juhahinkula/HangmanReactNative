@@ -10,8 +10,7 @@ export default class App extends React.Component {
         <Keyboard/>
       </View>
     );
-  }
-  
+  } 
 }
 
 const styles = StyleSheet.create({
